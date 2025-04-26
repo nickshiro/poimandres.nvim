@@ -510,9 +510,15 @@ function M.get(config)
     TerminalNormal = { link = 'SagaNormal' },
 
     -- nvim-neo-tree/neo-tree.nvim
+    NeoTreeNormal = { fg = p.text, bg = styles.background },
+    NeoTreeNormalNC = { fg = p.text, bg = styles.background },
+    NeoTreeDirectoryName = { fg = p.blue2 },
+    NeoTreeDirectoryIcon = { fg = p.blueGray2 },
+    NeoTreeSymbolicLinkTarget = { fg = p.teal1 },
+
     NeoTreeFileName = { fg = p.blueGray2 },
     NeoTreeTabActive = { fg = p.white, bg = p.background1 },
-    NeoTreeRootName = { fg = p.text },
+    NeoTreeRootName = { fg = p.blue1, style = 'bold' },
     -- git
     NeoTreeGitAdded = { fg = groups.git_add },
     NeoTreeGitModified = { fg = groups.git_modified },
