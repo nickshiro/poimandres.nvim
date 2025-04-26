@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/47901349/182481495-06f11e94-8d8a-4580-b869-56b6defae182.png" width="100px">      
+  <img src="https://user-images.githubusercontent.com/47901349/182481495-06f11e94-8d8a-4580-b869-56b6defae182.png" width="100px">
   <h1>poimandres.nvim</h1>
 </div>
 
@@ -9,7 +9,7 @@
   </a>
 </p>
 
-Neovim theme based on the [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support. 
+Neovim theme based on the [poimandres vscode theme](https://github.com/drcmda/poimandres-theme), written in Lua with treesitter support.
 
 All variants of the theme will be available for use.
 
@@ -40,6 +40,7 @@ All variants of the theme will be available for use.
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+- [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
@@ -56,7 +57,7 @@ Install with [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 -- Lua
 
-{ 
+{
   'olivercederborg/poimandres.nvim',
   lazy = false,
   priority = 1000,
@@ -82,7 +83,7 @@ Install with [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 -- Lua
 
-use { 
+use {
   'olivercederborg/poimandres.nvim',
   config = function()
     require('poimandres').setup {
@@ -97,9 +98,9 @@ use {
 
 <details>
 <summary>Install with vim-plug:</summary>
-  
+
 [vim-plug](https://github.com/junegunn/vim-plug)
-  
+
 ```vim
 " Vim Script
 
@@ -137,7 +138,7 @@ colorscheme poimandres
 
 ## ⚙️ Configuration:
 
-**Setup function options**: 
+**Setup function options**:
 
 ```lua
 require('poimandres').setup {
