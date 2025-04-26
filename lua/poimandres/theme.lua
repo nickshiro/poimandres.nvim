@@ -515,10 +515,9 @@ function M.get(config)
     NeoTreeDirectoryName = { fg = p.blue2 },
     NeoTreeDirectoryIcon = { fg = p.blueGray2 },
     NeoTreeSymbolicLinkTarget = { fg = p.teal1 },
-
     NeoTreeFileName = { fg = p.blueGray2 },
     NeoTreeTabActive = { fg = p.white, bg = p.background1 },
-    NeoTreeRootName = { fg = p.blue1, style = 'bold' },
+    NeoTreeRootName = { fg = p.text, style = 'bold' },
     -- git
     NeoTreeGitAdded = { fg = groups.git_add },
     NeoTreeGitModified = { fg = groups.git_modified },
@@ -526,7 +525,7 @@ function M.get(config)
     NeoTreeGitUntracked = { fg = groups.git_untracked },
     NeoTreeGitDeleted = { fg = groups.git_delete },
     NeoTreeGitRenamed = { fg = groups.git_rename },
-      
+
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
@@ -545,6 +544,8 @@ function M.get(config)
   vim.g.terminal_color_14 = p.blue2      -- bright cyan
   vim.g.terminal_color_7 = p.white       -- white
   vim.g.terminal_color_15 = p.white      -- bright white
+
+  print(vim.inspect(groups.git_modified))
 
   return theme
 end
