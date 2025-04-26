@@ -33,6 +33,8 @@ local config = {
     git_rename = 'teal3',
     git_stage = 'blue1',
     git_text = 'teal2',
+    git_modified = 'blue2',
+    git_untracked = 'teal1',
 
     headings = {
       h1 = 'teal2',

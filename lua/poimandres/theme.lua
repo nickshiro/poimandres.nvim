@@ -14,7 +14,7 @@ function M.get(config)
     float_background = (config.disable_float_background and p.none) or groups.panel,
   }
   styles.nc_background = (config.dim_nc_background and not config.disable_background and groups.panel)
-    or styles.background
+      or styles.background
 
   theme = {
     ColorColumn = { bg = p.blueGray1 },
@@ -89,26 +89,26 @@ function M.get(config)
     -- default,
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = p.text }, -- (preferred) any constant
-    String = { fg = p.teal1 }, --   a string constant: "this is a string"
-    Character = { fg = p.pink3 }, --  a character constant: 'c', '\n'
-    Number = { fg = p.teal1 }, --   a number constant: 234, 0xff
-    Boolean = { fg = p.teal1 }, --  a boolean constant: TRUE, false
-    Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
+    Constant = { fg = p.text },         -- (preferred) any constant
+    String = { fg = p.teal1 },          --   a string constant: "this is a string"
+    Character = { fg = p.pink3 },       --  a character constant: 'c', '\n'
+    Number = { fg = p.teal1 },          --   a number constant: 234, 0xff
+    Boolean = { fg = p.teal1 },         --  a boolean constant: TRUE, false
+    Float = { fg = p.teal1 },           --    a floating point constant: 2.3e10
 
-    Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
-    Function = { fg = p.blue2 }, -- function name (also: methods for classes)
+    Identifier = { fg = p.blueGray1 },  -- (preferred) any variable name
+    Function = { fg = p.blue2 },        -- function name (also: methods for classes)
 
-    Statement = { fg = p.text }, -- (preferred) any statement
+    Statement = { fg = p.text },        -- (preferred) any statement
     Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
-    Repeat = { fg = p.blue3 }, --   for, do, while, etc.
-    Label = { fg = p.text }, --    case, default, etc.
-    Operator = { fg = p.blue2 }, -- "sizeof", "+", "*", etc.
-    Keyword = { fg = p.blue3 }, --  any other keyword
-    Exception = { fg = p.blue3 }, --  try, catch, throw
+    Repeat = { fg = p.blue3 },          --   for, do, while, etc.
+    Label = { fg = p.text },            --    case, default, etc.
+    Operator = { fg = p.blue2 },        -- "sizeof", "+", "*", etc.
+    Keyword = { fg = p.blue3 },         --  any other keyword
+    Exception = { fg = p.blue3 },       --  try, catch, throw
 
-    PreProc = { fg = p.text }, -- (preferred) generic Preprocessor
-    Include = { fg = p.blueGray1 }, --  preprocessor #include
+    PreProc = { fg = p.text },          -- (preferred) generic Preprocessor
+    Include = { fg = p.blueGray1 },     --  preprocessor #include
     -- Define        = { }, --   preprocessor #define
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
@@ -118,14 +118,14 @@ function M.get(config)
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Typedef = { fg = p.blueGray1 }, --  A typedef
 
-    Special = { fg = p.blueGray2 }, -- (preferred) any special symbol
+    Special = { fg = p.blueGray2 },        -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
-    Tag = { fg = p.text }, --    you can use CTRL-] on this
-    Delimiter = { fg = p.blueGray1 }, --  character that needs attention
+    Tag = { fg = p.text },                 --    you can use CTRL-] on this
+    Delimiter = { fg = p.blueGray1 },      --  character that needs attention
     SpecialComment = { fg = p.blueGray1 }, -- special things inside a comment
     -- Debug         = { }, --    debugging statements
 
-    Comment = { fg = p.blueGray1 }, -- (preferred) any special symbol
+    Comment = { fg = p.blueGray1 },       -- (preferred) any special symbol
 
     Underlined = { style = 'underline' }, -- (preferred) text that stands out, HTML links
     Bold = { style = 'bold' },
@@ -134,7 +134,7 @@ function M.get(config)
     -- ("Ignore", below, may be invisible...)
     -- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-    Error = { fg = p.pink3 }, -- (preferred) any erroneous construct
+    Error = { fg = p.pink3 },                     -- (preferred) any erroneous construct
     Todo = { bg = p.yellow, fg = p.background3 }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     qfLineNr = { fg = p.blueGray3 },
@@ -159,7 +159,7 @@ function M.get(config)
     markdownH4 = { fg = p.blue2, style = 'bold' },
     markdownLinkText = { fg = p.blue1, style = 'underline' },
 
-    debugPC = { bg = p.background1 }, -- used for highlighting the current line in terminal-debug
+    debugPC = { bg = p.background1 },                       -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { bg = p.background2, fg = p.pink3 }, -- used for breakpoint colors in terminal-debug
     DiagnosticError = { fg = groups.error },
     DiagnosticHint = { fg = groups.hint },
@@ -289,7 +289,7 @@ function M.get(config)
     LspReferenceWrite = { bg = p.blue2 },
 
     -- lsp-highlight-codelens
-    LspCodeLens = { fg = p.blueGray1 }, -- virtual text of code lens
+    LspCodeLens = { fg = p.blueGray1 },          -- virtual text of code lens
     LspCodeLensSeparator = { fg = p.blueGray3 }, -- separator between two or more code lens
 
     -- nvim-ts-rainbow
@@ -508,24 +508,36 @@ function M.get(config)
     -- Float term
     TerminalBorder = { link = 'SagaBorder' },
     TerminalNormal = { link = 'SagaNormal' },
+
+    -- nvim-neo-tree/neo-tree.nvim
+    NeoTreeFileName = { fg = p.blueGray2 },
+    NeoTreeTabActive = { fg = p.white, bg = p.background1 },
+    NeoTreeRootName = { fg = p.text },
+    -- git
+    NeoTreeGitAdded = { fg = groups.git_add },
+    NeoTreeGitModifed = { fg = groups.git_modified },
+    NeoTreeGitIgnored = { fg = blend(groups.git_ignore, groups.background, 0.8) },
+    NeoTreeGitUntracked = { fg = groups.git_untracked },
+    NeoTreeGitDeleted = { fg = groups.git_delete },
+    NeoTreeGitRenamed = { fg = groups.git_rename },
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
   vim.g.terminal_color_8 = p.background3 -- bright black
-  vim.g.terminal_color_1 = p.pink3 -- red
-  vim.g.terminal_color_9 = p.pink3 -- bright red
-  vim.g.terminal_color_2 = p.teal1 -- green
-  vim.g.terminal_color_10 = p.teal1 -- bright green
-  vim.g.terminal_color_3 = p.yellow -- yellow
-  vim.g.terminal_color_11 = p.yellow -- bright yellow
-  vim.g.terminal_color_4 = p.blue1 -- blue
-  vim.g.terminal_color_12 = p.blue2 -- bright blue
-  vim.g.terminal_color_5 = p.pink2 -- magenta
-  vim.g.terminal_color_13 = p.pink2 -- bright magenta
-  vim.g.terminal_color_6 = p.blue1 -- cyan
-  vim.g.terminal_color_14 = p.blue2 -- bright cyan
-  vim.g.terminal_color_7 = p.white -- white
-  vim.g.terminal_color_15 = p.white -- bright white
+  vim.g.terminal_color_1 = p.pink3       -- red
+  vim.g.terminal_color_9 = p.pink3       -- bright red
+  vim.g.terminal_color_2 = p.teal1       -- green
+  vim.g.terminal_color_10 = p.teal1      -- bright green
+  vim.g.terminal_color_3 = p.yellow      -- yellow
+  vim.g.terminal_color_11 = p.yellow     -- bright yellow
+  vim.g.terminal_color_4 = p.blue1       -- blue
+  vim.g.terminal_color_12 = p.blue2      -- bright blue
+  vim.g.terminal_color_5 = p.pink2       -- magenta
+  vim.g.terminal_color_13 = p.pink2      -- bright magenta
+  vim.g.terminal_color_6 = p.blue1       -- cyan
+  vim.g.terminal_color_14 = p.blue2      -- bright cyan
+  vim.g.terminal_color_7 = p.white       -- white
+  vim.g.terminal_color_15 = p.white      -- bright white
 
   return theme
 end
