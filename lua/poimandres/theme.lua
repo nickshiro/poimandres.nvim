@@ -515,7 +515,7 @@ function M.get(config)
     NeoTreeRootName = { fg = p.text },
     -- git
     NeoTreeGitAdded = { fg = groups.git_add },
-    NeoTreeGitModifed = { fg = groups.git_modified },
+    NeoTreeGitModified = { fg = groups.git_modified },
     NeoTreeGitIgnored = { fg = blend(groups.git_ignore, groups.background, 0.8) },
     NeoTreeGitUntracked = { fg = groups.git_untracked },
     NeoTreeGitDeleted = { fg = groups.git_delete },
