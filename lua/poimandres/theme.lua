@@ -526,6 +526,7 @@ function M.get(config)
     NeoTreeGitUntracked = { fg = groups.git_untracked },
     NeoTreeGitDeleted = { fg = groups.git_delete },
     NeoTreeGitRenamed = { fg = groups.git_rename },
+      
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
