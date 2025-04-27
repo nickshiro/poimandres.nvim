@@ -545,8 +545,6 @@ function M.get(config)
   vim.g.terminal_color_7 = p.white       -- white
   vim.g.terminal_color_15 = p.white      -- bright white
 
-  print(vim.inspect(groups.git_modified))
-
   return theme
 end
 
